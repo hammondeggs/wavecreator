@@ -3,7 +3,12 @@ Interactive Wave Creator / Sample Loader for KORG 'logue synthesizers.
 
 #### PLEASE NOTE. This is EXPERIMENTAL SOFTWARE. It is to be used at your OWN risk! 
 
-This application requires the .NET Framework 4.5 to be installed. 
+This application requires the .NET Framework 4.5 to be installed, which it likely already is. Windows 7 minimum.
+
+### A quick word...
+I've been having a ton of fun creating these plugins, and it's thirsty work. If you like stuff like this and my other work, by all means feel free to contribute whatever you can to the fund to help fund the beer supply! This project admittedly used up a lot!
+
+This can be done here :  [Donate!](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=MSTCVLXMG7Z5J&source=url)
 
 
 __*please be certain to review the current license as well!*__
