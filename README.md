@@ -56,9 +56,9 @@ Loading waveforms brings up a new window where you will see the properties of th
 
 This window will tell you how much the sample is reduced by to fit the remaining memory (if at all) - by default enough memory is saved for ONE sample descriptor (required to be able to play the sound), however you can specify to save more room for more descriptors if you like via the "Leave room for # of descriptors" entry. 
 
-*In addition you can force-shrink the sample by 0-99% (e.g. if you wish to save room for another sample)*
+*In addition you can force-shrink the sample by 0-99% (e.g. if you know you need to save room for another sample)*
 
-*It is important to note, that the re-sample method used here to shrink the samples is currently relatively simple - any DAW or external editor would likely do a 'better' job at this, so for best results it's suggested you pre-size your samples.*
+__*It is important to note, that the re-sample method used here to shrink the samples is currently relatively simple - any DAW or external editor would likely do a MUCH better job at this, so for best results it's suggested you pre-size your samples.*__
 
 The overall "Shrinkage" amount is displayed, and you will be warned if the shrinkage amount is too high (resulting in a very low quality sound)
 
