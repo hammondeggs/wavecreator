@@ -138,7 +138,7 @@ Before the synthesizer's amplitude envelope, you can have a separate amplitude e
 will allow you to generate 'scratching' type sounds by turning the Shape Knob on your synthesizer. **Note! the Shape Knob was *NOT* designed with this in mind. Use of this will likely contribute to premature
 wear of the Shape Knob! Do so at your own risk!**
 
-**Playable Range** : This specifies what range on the keyboard this descriptor applies to. Left click to set the MINIMUM value, right click to set the MAXIMUM value. You will hear the sample play at the selected note when you do this.
+**Playable Range** : This specifies what range on the keyboard this descriptor applies to. Left click to set the MINIMUM value, right click to set the MAXIMUM value. You will hear the sample play at the selected note when you do this. *Overlapping descriptors are  NOT supported!* If there is an overlap, the keys affected will be shown in RED. If this occurs, the "first" matching descriptor will be played. You cannot 'mix' samples this way. It would a: likely use up too much CPU time on the synthesizer, and b: *any* additions to the player code reduce the amount of memory left for samples!
 
 **Root Note** :  This specifies at which key the sample will be played back at the "Sample Rate At Root Note" rate. You will hear the sample being played back at the Root Note rate when this is clicked. If you want your sample to be played back at a 'lower' octave, select a Root Note in a 'high' octave.
 
