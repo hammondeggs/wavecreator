@@ -1,6 +1,8 @@
 # Wave Creator
 Interactive Wave Creator / Sample Loader for KORG 'logue synthesizers.
 
+*It is __strongly__ recommended you review this document before installing and / or using this software. There is a lot of functionality that is documented here!*
+
 #### PLEASE NOTE. THIS IS EXPERIMENTAL SOFTWARE, BOTH FOR THE PC AND THE INCLUDED SYNTHESIZER USER VOICE. THEY ARE TO BE USED AT YOUR OWN RISK!
 
 This application requires the .NET Framework 4.5 to be installed, and will require Windows 7 as a minimum.
