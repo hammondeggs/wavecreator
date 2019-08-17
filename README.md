@@ -1,9 +1,9 @@
 # Wave Creator
 Interactive Wave Creator / Sample Loader for KORG 'logue synthesizers.
 
-#### PLEASE NOTE. This is EXPERIMENTAL SOFTWARE. It is to be used at your OWN risk! 
+#### PLEASE NOTE. THIS IS EXPERIMENTAL SOFTWARE, BOTH FOR THE PC AND THE INCLUDED SYNTHESIZER USER VOICE. THEY ARE TO BE USED AT YOUR OWN RISK!
 
-This application requires the .NET Framework 4.5 to be installed, which it likely already is. Windows 7 minimum.
+This application requires the .NET Framework 4.5 to be installed, and will require Windows 7 as a minimum.
 
 ### A quick word...
 I've been having a ton of fun creating these plugins, and it's thirsty work. If you like stuff like this and my other work, by all means feel free to contribute whatever you can to the fund to help fund the beer supply! This project admittedly used up a lot!
@@ -124,19 +124,17 @@ Descriptors are best edited using the Wave Editor, where you can press "Generate
 
 **Loop Free Run** : If looping is enabled, this instructs the player to never 'restart' a looped sample - playback will always continue 'where it left off'. Note - currently user oscillators 'freeze' once the synthesizer's amplitude EG reaches zero, however this still can be helpful to prevent the "machine-gun" type sound that can be associated with repeated sample playback. Useful for looped drum cymbal/hat sounds.
 
-**Loop Sub Amount**: The # of data points to *SUBTRACT* from the current data position once the End Point has been reached. This is how you're allowed to have a sample 'start' in the middle but loop the entire sample. E.g. if your sample contained a total of 8000 points, and your Start Offset was 4000, Sample Length was 4000, but your Loop Sub was 8000, you would effectively have an 8000 point sample, that
-is started from the middle. Useful for breaking up drum patterns. *Ideally this is set automatically via the wave editor*
+**Loop Sub Amount**: The # of data points to *SUBTRACT* from the current data position once the End Point has been reached. This is how you're allowed to have a sample 'start' in the middle but loop the entire sample. E.g. if your sample contained a total of 8000 points, and your Start Offset was 4000, Sample Length was 4000, but your Loop Sub was 8000, you would effectively have an 8000 point sample, that is started from the middle. Useful for breaking up drum patterns. *Ideally this is set automatically via the wave editor, you rarely if ever will need to edit this value manually*
 
-**Scale Amount:** *Currently not fully supported by the player*. This will eventually allow you to specify the pitch-tracking level from 0 to 2 (in decimal), however currently, what it CAN do, is a value of "0" will force the synthesizer to play the sample at a FIXED pitch (cannot even be detuned by the shape knob), and a value of "1" is normal operation where both pitch tracking and tuning are permitted.
+**Scale Amount:** *Currently not fully supported by the player*. This will eventually allow you to specify the pitch-tracking level from 0 to 2 (in decimal), however currently, what it CAN do, is a value of "0" will force the synthesizer to play the sample at a FIXED pitch (cannot even be detuned by the shape knob), and a value of "1" is normal operation where both pitch tracking and tuning are permitted. Useful if you wish to have a sound effect that is NOT affected by any pitch changes either from the synthesizer or via the shape knob.
 
 #### Amplitude Envelopes:
-Before the synthesizer's amplitude envelope, you can have a separate amplitude envelope on the sample alone. Sample volume/envelopes are processed internally at 32 bits despite using 8 bit data sources. Adjust the Attack, Decay, Sustain Level and Release rates by clicking on the relevant 'knob',and while holding the mouse move it up or down to adjust. 
+Before the synthesizer's amplitude envelope, you can have a separate amplitude envelope on the sample alone. Sample volume/envelopes are processed internally at 32 bits despite using 8 bit data sources, thus preserving quality as best as possible. Adjust the Attack, Decay, Sustain Level and Release rates by clicking on the relevant 'knob',and while holding the mouse move it up or down to adjust. 
 
-**Volume** : Sets the overall sample volume. This too is calculated internally as 32 bits despite the sample currently being an 8 bit data source.
+**Volume** : Sets the overall sample volume. This too is calculated internally as 32 bits despite the sample currently being an 8 bit data source, so there should be little reduction in sound quality despite the sound played back being quieter.
 
 **Shape Scratch**: This one, if selected, will cause **NO SOUND** to be generated **UNLESS** you hold a key within the specified range - **and** move the shape knob. The sample is mapped 'around' the shape knob, which 
-will allow you to generate 'scratching' type sounds by turning the Shape Knob on your synthesizer. **Note! the Shape Knob was *NOT* designed with this in mind. Use of this will likely contribute to premature
-wear of the Shape Knob! Do so at your own risk!**
+will allow you to generate 'scratching' type sounds by turning the Shape Knob on your synthesizer. **Note! the Shape Knob was *NOT* designed with this in mind. Use of this could contribute to premature wear of the Shape Knob! Do so at your own risk!**
 
 **Playable Range** : This specifies what range on the keyboard this descriptor applies to. Left click to set the MINIMUM value, right click to set the MAXIMUM value. You will hear the sample play at the selected note when you do this. *Overlapping descriptors are  NOT supported!* If there is an overlap, the keys affected will be shown in RED. If this occurs, the "first" matching descriptor will be played. You cannot 'mix' samples this way. It would a: likely use up too much CPU time on the synthesizer, and b: *any* additions to the player code reduce the amount of memory left for samples!
 
